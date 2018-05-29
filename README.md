@@ -3,7 +3,6 @@ Import .mbox files to G Suite (formerly Google Apps for Work)
 
 > Freely inspired by import-mailbox-to-group developped by Liron Newman
 > https://github.com/google/import-mailbox-to-gmail
-> Adapted by Yann Moriaud
 
 This script allows G Suite admins to import mbox files in bulk for groups.
 
@@ -28,9 +27,9 @@ into the mailboxes of all groups in your domain.
    **Create** button. If this is your first project you must agree to the Terms of
    Service at this point.
 
-4. Click the **Enable and manage APIs** link in the **Use Google APIs** box. 
+4. Click the **Enable and manage APIs** link in the **Use Google APIs** box.
 
-5. Enable the APIs: 
+5. Enable the APIs:
     1. Select the **Admin SDK** link and press the **Enable API** button.
     1. Select the **Groups Settings API** link and press the **Enable API** button.
     1. Select the **Groups Migration API** link and press the **Enable API** button.
