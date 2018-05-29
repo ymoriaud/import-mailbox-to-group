@@ -12,7 +12,7 @@ This script allows G Suite admins to import mbox files in bulk for groups.
 You only authorize it once using a service account, and then it can import mail
 into the mailboxes of all groups in your domain.
 
-### A. Creating and authorizing a service account for Gmail API
+### A. Creating and authorizing a service account for Groups API
 
 1. Go to the [Developers Console](https://console.developers.google.com/project)
    and log in as a domain super administrator.
