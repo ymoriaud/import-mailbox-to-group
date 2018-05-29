@@ -132,7 +132,6 @@ def process_mbox_files(group_name, service):
       full_filename = os.path.join(root, file)
       if labelname.endswith('.mbox/mbox'):
           logging.error("It's seem to be Apple Mail export. It's not handled by the script")
-          raise
         # Assume this is an Apple Mail export, so there's an mbox file inside a
         # dir that ends with .mbox.
         # labelname = labelname[:-10]
@@ -169,7 +168,7 @@ def process_mbox_files(group_name, service):
           else:
             message_data = io.StringIO(message.as_string())
           media = MediaIoBaseUpload(message_data, mimetype='message/rfc822')
-          message_response = service.archive().insert(
+          service.archive().insert(
               groupId=group_name,
               media_body=media).execute()
           number_of_successes_in_label += 1
